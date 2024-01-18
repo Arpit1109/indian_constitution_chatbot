@@ -7,11 +7,11 @@ import streamlit as st
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 
-pinecone.init(api_key='1abb2126-b2f6-45f2-9d1b-f28deabf9699', environment='gcp-starter')
+pinecone.init(api_key='', environment='gcp-starter')
 index = pinecone.Index('langchain-chatbot')
 
 client = OpenAI(
-    api_key="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"
+    api_key=""
 )
 
 def find_match(input):
